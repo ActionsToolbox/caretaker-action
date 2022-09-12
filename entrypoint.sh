@@ -2,9 +2,9 @@
 
 export PATH=/usr/local/bundle/bin/:$PATH
 
-set -o errexit
-set -o pipefail
-set -o errtrace
+#set -o errexit
+#set -o pipefail
+#set -o errtrace
 
 if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
@@ -37,7 +37,7 @@ echo "3"
 git --no-pager log --first-parent --oneline --pretty=format:'%h|%H|%d|%s|%cd'
 
 caretaker --help
-#caretaker --silent --output "${OUTPUT_FILE}"
+caretaker --output "${OUTPUT_FILE}"
 
 #cat "${OUTPUT_FILE}"
 
