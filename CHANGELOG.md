@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - First commit [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
 
+- First commit [`[d9f4953]`](https://github.com/ActionsToolbox/caretaker-action/commit/d9f49530ea439bb5e0d74cc80044268f8e54f08e)
+
 - First commit [`[7201e06]`](https://github.com/ActionsToolbox/caretaker-action/commit/7201e0657cbf306ba8017b6a670b03014bd07ada)
 
 - First commit [`[33db10c]`](https://github.com/ActionsToolbox/caretaker-action/commit/33db10c8cb1004b0299c961f52c0640373b93432)

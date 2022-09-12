@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+sh -c "echo $*"
+
 gem install caretaker
 
-caretaker --output "${1}"
+/usr/local/bundle/bin/caretaker --output "${1}"
