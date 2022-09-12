@@ -5,9 +5,17 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.3...HEAD)
+### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.4...HEAD)
 
 - TESTING A B C [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+### [v0.0.3](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.2...v0.0.3)
+
+> Released on September, 12th 2022
+
+- chore: caretaker action [`[2075fe9]`](https://github.com/ActionsToolbox/caretaker-action/commit/2075fe927cef88321a647f093369b73972631f58)
+
+- TESTING A B C [`[eb9130a]`](https://github.com/ActionsToolbox/caretaker-action/commit/eb9130ab56694b52d8e0a472723e046f2e393bc5)
 
 ### [v0.0.2](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.1...v0.0.2)
 
