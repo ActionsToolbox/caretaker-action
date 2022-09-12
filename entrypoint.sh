@@ -30,7 +30,7 @@ gem install caretaker
 caretaker --silent --output "${OUTPUT_FILE}" || true
 
 git add "${OUTPUT_FILE}"
-git commit -m "(docs) Update myfile"
+git commit -m "${INPUT_GIT_COMMIT_MESSAGE}"
 git push
 
 exit 0

@@ -31,28 +31,36 @@
     </a>
 </p>
 
-## Overview
-
-# Hello world docker action
-
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+## Caretaker
 
 ## Inputs
 
-## `who-to-greet`
+| Name                | Required | Default Value                      | Details                                                                                                                                   |
+| ------------------- | -------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| git-push-user-name  | false    |                                    | If empty the name of the GitHub Actions bot will be used (i.e. '''github-actions[bot]''')                                                 |
+| git-push-user-email | false    |                                    | If empty the no-reply email of the GitHub Actions bot will be used (i.e. '''github-actions[bot]@users.noreply.github.com''')              |
+| git-commit-message  | false    | caretaker-action: automated action | The commit message to use                                                                                                                 |
+| output-file         | false    | CHANGELOG.md                       | The name of the changelog file                                                                                                            |
+| args                | false    |                                    | Additional arguments to pass to the command (see [full documentation](https://github.com/terraform-docs/terraform-docs/tree/master/docs)) |
 
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-## `time`
-
-The time we greeted you.
+> args are currently silently ignored
 
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+name: Caretaker
+on: [push]
+
+jobs:
+  caretaker:
+    runs-on: ubuntu-latest
+    name: Caretaker
+    steps:
+      - name: Check our repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Caretaker
+        id: caretaker
+        uses: ActionsToolbox/caretaker-action@master
 ```
