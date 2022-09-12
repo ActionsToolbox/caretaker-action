@@ -9,7 +9,6 @@ inputs:
   gpg_passphrase:
     description: Passphrase for the GPG key
     required: false
-
   git-push-user-name:
     description: If empty the name of the GitHub Actions bot will be used (i.e. `github-actions[bot]`)
     required: false
