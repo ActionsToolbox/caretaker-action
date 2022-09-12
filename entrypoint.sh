@@ -29,6 +29,12 @@ gem install caretaker
 
 caretaker --silent --output "${OUTPUT_FILE}" || true
 
+if [[ -z "$GPG_PRIVATE_KEY" ]]; then
+    echo "No Key or key empty - unsigned commit"
+else
+    echo "Key given - will sign commits"
+fi
+
 git add "${OUTPUT_FILE}"
 git commit -m "${INPUT_GIT_COMMIT_MESSAGE}"
 git push
