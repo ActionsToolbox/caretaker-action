@@ -43,7 +43,7 @@ else
 #    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
-    gpg-preset-passphrase --version
+    /usr/lib/gnupg/gpg-preset-passphrase --version
 
 #    gpgconf --kill gpg-agent
 
