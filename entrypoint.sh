@@ -42,7 +42,7 @@ if [[ -z "${GPG_PRIVATE_KEY}" ]] || [[ -z "${GPG_PASSPHRASE}" ]]; then
 else
     echo "Key + passphrase given - will sign commits"
 
-    export GPG_TTY=$(tty)
+    #export GPG_TTY=$(tty)
 
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import >> /dev/null 2>&1
 
@@ -52,7 +52,7 @@ else
 
     for k in $keygrip
     do
-        echo "${GPG_PASSPHRASE}"  | gpg-preset-passphrase --preset $k
+        echo "${GPG_PASSPHRASE}"  | gpg-preset-passphrase --preset "${k}"
     done
 
     KEY=$(gpg --list-secret-keys --keyid-format LONG caretaker-bot@wolfsoftware.com | head -2 | tail -1)
