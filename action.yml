@@ -9,7 +9,9 @@ inputs:
     default: 'CHANGELOG.md'
 
 runs:
-  using: "docker"
+  using: 'docker'
   image: Dockerfile
-  args:
-    - ${{ inputs.output-file }}
+
+branding:
+  icon: 'activity'
+  color: 'white'

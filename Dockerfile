@@ -1,4 +1,4 @@
-FROM ruby:latest
+FROM ruby:slim
 
 COPY entrypoint.sh /entrypoint.sh
 
