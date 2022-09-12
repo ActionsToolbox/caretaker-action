@@ -8,16 +8,10 @@ if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
 fi
 
-#gem install caretaker
+gem install caretaker
 
-#/usr/local/bundle/bin/caretaker --output "${1}"
+ls
 
+#/usr/local/bundle/bin/caretaker --output "${OUTPUT_FILE}"
 
-echo "--------------------------------------------------------------------------------"
-for word in "$@"; do echo "$word"; done
-
-
-echo "--------------------------------------------------------------------------------"
-echo $OUTPUT_FILE
-echo $ARGS
-echo "--------------------------------------------------------------------------------"
+touch MYFILE
