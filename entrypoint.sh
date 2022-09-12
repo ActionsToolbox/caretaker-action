@@ -22,6 +22,6 @@ touch MYFILE
 ls
 echo "================================"
 
-git add MyFile
+git add MYFILE
 git commit -m "(docs) Update myfile"
 git push
