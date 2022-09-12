@@ -5,15 +5,25 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.4...HEAD)
+### [v0.0.7](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.6...v0.0.7)
 
-- lets see [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+> Released on September, 13th 2022
+
+- stuff [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- chore: caretaker action [`[c3ab82c]`](https://github.com/ActionsToolbox/caretaker-action/commit/c3ab82c8302a82a40509f645cd8656c87081591f)
+
+### [v0.0.6](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.4...v0.0.6)
+
+> Released on September, 13th 2022
+
+- lets see [`[14b3474]`](https://github.com/ActionsToolbox/caretaker-action/commit/14b3474bd2143e5d72bf9a8c6c97d567446a8aa4)
 
 - chore: caretaker action [`[da4367e]`](https://github.com/ActionsToolbox/caretaker-action/commit/da4367ec62d6e44a10cb5aea2625f91d49b8b572)
 
 - TESTING A B C [`[701c504]`](https://github.com/ActionsToolbox/caretaker-action/commit/701c504913dfe505f62746491ada4f889ea471d9)
 
-### [v0.0.3](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.2...v0.0.3)
+### [v0.0.4](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.3...v0.0.4)
 
 > Released on September, 12th 2022
 
@@ -21,7 +31,7 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - TESTING A B C [`[eb9130a]`](https://github.com/ActionsToolbox/caretaker-action/commit/eb9130ab56694b52d8e0a472723e046f2e393bc5)
 
-### [v0.0.2](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.1...v0.0.2)
+### [v0.0.3](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.2...v0.0.3)
 
 > Released on September, 12th 2022
 
@@ -115,7 +125,7 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[1346e43]`](https://github.com/ActionsToolbox/caretaker-action/commit/1346e43b71cd85a11934146eb7cf67b9cf5985bf)
 
-### [v0.0.1](https://github.com/ActionsToolbox/caretaker-action/releases/v0.0.1)
+### [v0.0.2](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.1...v0.0.2)
 
 > Released on September, 12th 2022
 
@@ -192,6 +202,10 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 - First commit [`[a95f293]`](https://github.com/ActionsToolbox/caretaker-action/commit/a95f293b929e4527cfd61e45aad30e0528fa4d35)
 
 - First commit [`[9a0359b]`](https://github.com/ActionsToolbox/caretaker-action/commit/9a0359b986374e9e77d491e462b485e9e60dc5dd)
+
+### [v0.0.1](https://github.com/ActionsToolbox/caretaker-action/releases/v0.0.1)
+
+> Released on September, 12th 2022
 
 - First commit [`[50a9b99]`](https://github.com/ActionsToolbox/caretaker-action/commit/50a9b9918092b72735f7b4835a4ddfb547d99a44)
 
