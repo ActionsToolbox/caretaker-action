@@ -22,6 +22,7 @@ jobs:
       - name: Check our repo
         uses: actions/checkout@v3
         with:
+          branch: 'master'
           fetch-depth: 0
       - name: Caretaker
         id: caretaker
