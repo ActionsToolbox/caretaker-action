@@ -26,9 +26,12 @@ whoami
 
 id
 
+caretaker --output "${OUTPUT_FILE}"
+
+cat "${OUTPUT_FILE}"
+
 exit 0
 
-caretaker --output "${OUTPUT_FILE}"
 
 # When the runner maps the $GITHUB_WORKSPACE mount, it is owned by the runner
 # user while the created folders are owned by the container user, causing this

@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.1...HEAD)
 
-- First commit [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- TESTING 1 2 3 [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- First commit [`[3b85aa0]`](https://github.com/ActionsToolbox/caretaker-action/commit/3b85aa07e052b426a084855cebce476c834cc122)
 
 - First commit [`[d8781d1]`](https://github.com/ActionsToolbox/caretaker-action/commit/d8781d1cb96fecfa55b05de7e282003d2225898f)
 
