@@ -9,6 +9,10 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - trying to be clever [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
 
+- chore: caretaker action [`[cb68a5b]`](https://github.com/ActionsToolbox/caretaker-action/commit/cb68a5b8397ca902e5bd24c8ea2519fe86e8adc0)
+
+- trying to be clever [`[5db9297]`](https://github.com/ActionsToolbox/caretaker-action/commit/5db9297b6e06f70cea027ffc2c0cb257015e02f1)
+
 - chore: caretaker action [`[edaf5ce]`](https://github.com/ActionsToolbox/caretaker-action/commit/edaf5ce4336fe81c5c74a7e443255d52128e98d9)
 
 - TESTING A B C [`[0d7e0f7]`](https://github.com/ActionsToolbox/caretaker-action/commit/0d7e0f72872a9e184b4fc1657dd6ebad503a50b7)
