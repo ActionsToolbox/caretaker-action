@@ -39,10 +39,10 @@ else
 
     export GPG_TTY=$(tty)
 
-    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
+    echo "${GPG_PRIVATE_KEY}" | gpg2 --batch --import
 
     echo "--------------------------------------------"
-    echo "test" | gpg --clearsign
+    echo "test" | gpg2 --clearsign
     echo "--------------------------------------------"
 
     git config --global user.signingkey 06EFF25D4D5BAE4F
