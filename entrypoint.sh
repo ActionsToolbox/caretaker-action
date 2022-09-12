@@ -44,7 +44,7 @@ else
 
     export GPG_TTY=$(tty)
 
-    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
+    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import >> /dev/null 2>&1
 
     echo allow-preset-passphrase >> ~/.gnupg/gpg-agent.conf
     gpg-connect-agent reloadagent /bye
