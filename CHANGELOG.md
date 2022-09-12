@@ -5,9 +5,17 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.1...HEAD)
+### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.2...HEAD)
 
-- TESTING 1 2 3 [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+### [v0.0.1](https://github.com/ActionsToolbox/caretaker-action/releases/v0.0.1)
+
+> Released on September, 12th 2022
+
+- TESTING A B C [`[0f7221a]`](https://github.com/ActionsToolbox/caretaker-action/commit/0f7221a802e75d8d19db969399da9442ba015586)
+
+- TESTING 1 2 3 [`[fad60e8]`](https://github.com/ActionsToolbox/caretaker-action/commit/fad60e8070b67998173900dd6caa6156c49a4dfc)
 
 - TESTING 1 2 3 [`[9ed4f81]`](https://github.com/ActionsToolbox/caretaker-action/commit/9ed4f81c40f625838e6177d3bd05196f3c46d3c1)
 
