@@ -28,7 +28,9 @@ git fetch --depth=1 origin +refs/tags/*:refs/tags/* || true
 
 gem install caretaker
 
-caretaker --silent --output "${OUTPUT_FILE}"
+which caretaker
+
+#caretaker --silent --output "${OUTPUT_FILE}"
 
 cat "${OUTPUT_FILE}"
 

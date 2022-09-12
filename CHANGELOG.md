@@ -9,6 +9,10 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - TESTING 1 2 3 [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
 
+- TESTING 1 2 3 [`[e7ea0ed]`](https://github.com/ActionsToolbox/caretaker-action/commit/e7ea0ed5fb3300b29a5e783ad6625b6f9185006f)
+
+- TESTING 1 2 3 [`[893c351]`](https://github.com/ActionsToolbox/caretaker-action/commit/893c3513ed3224d70b2bbffd8988a1a5c2b97aeb)
+
 - First commit [`[3b85aa0]`](https://github.com/ActionsToolbox/caretaker-action/commit/3b85aa07e052b426a084855cebce476c834cc122)
 
 - First commit [`[d8781d1]`](https://github.com/ActionsToolbox/caretaker-action/commit/d8781d1cb96fecfa55b05de7e282003d2225898f)
