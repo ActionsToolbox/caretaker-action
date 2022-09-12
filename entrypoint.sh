@@ -2,9 +2,9 @@
 
 export PATH=/usr/local/bundle/bin/:$PATH
 
-#set -o errexit
-#set -o pipefail
-#set -o errtrace
+set -o errexit
+set -o pipefail
+set -o errtrace
 
 if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
@@ -27,19 +27,9 @@ git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
 
 gem install caretaker
 
-ls -lsa
+caretaker --output "${OUTPUT_FILE}" || true
 
-echo "1"
-git rev-parse --show-toplevel
-echo "2"
-git config --get remote.origin.url
-echo "3"
-git --no-pager log --first-parent --oneline --pretty=format:'%h|%H|%d|%s|%cd'
-
-caretaker --help
-caretaker --output "${OUTPUT_FILE}"
-
-#cat "${OUTPUT_FILE}"
+cat "${OUTPUT_FILE}"
 
 exit 0
 
