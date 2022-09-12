@@ -40,7 +40,6 @@ else
 
     export GPG_TTY=$(tty)
 
-#    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
     gpg-preset-passphrase --version
@@ -57,10 +56,9 @@ else
     git config --global user.signingkey 06EFF25D4D5BAE4F
     git config --global commit.gpgsign true
 
-echo "4"
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
 
-#git push
+git push
 
 exit 0
