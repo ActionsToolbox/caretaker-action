@@ -3,16 +3,13 @@ author: "TGWolf"
 description: "A tool to run caretaker to generate changelogs."
 
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  output-file:  # id of input
+    description: 'The name of the changelog file'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'CHANGELOG.md'
 
 runs:
   using: "docker"
   image: Dockerfile
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.output-file }}
