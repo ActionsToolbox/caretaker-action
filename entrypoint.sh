@@ -38,7 +38,7 @@ else
     echo "Key + passphrase given - will sign commits"
     gpg --list-secret-keys
 
-    cat "${GPG_PRIVATE_KEY}" > gpg.key
+    echo -e "${GPG_PRIVATE_KEY}" > gpg.key
 
     gpg --allow-secret-key-import --import "gpg.key" --passphrase "${GPG_PASSPHRASE}"
 
@@ -46,6 +46,6 @@ else
     gpg --list-secret-keys
 fi
 
-git push
+#git push
 
 exit 0
