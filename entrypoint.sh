@@ -24,11 +24,14 @@ fi
 git config --global --add safe.directory /github/workspace
 git config --global user.name "${INPUT_GIT_PUSH_USER_NAME}"
 git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
-git fetch --depth=1 origin +refs/tags/*:refs/tags/* || true
 
 gem install caretaker
 
-which caretaker
+ls -lsa
+
+git rev-parse --show-toplevel
+git config --get remote.origin.url
+git --no-pager log --first-parent --oneline --pretty=format:'%h|%H|%d|%s|%cd'
 
 #caretaker --silent --output "${OUTPUT_FILE}"
 
