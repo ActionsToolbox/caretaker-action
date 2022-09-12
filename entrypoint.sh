@@ -2,9 +2,9 @@
 
 export PATH=/usr/local/bundle/bin/:$PATH
 
-set -o errexit
-set -o pipefail
-set -o errtrace
+#set -o errexit
+#set -o pipefail
+#set -o errtrace
 
 if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
