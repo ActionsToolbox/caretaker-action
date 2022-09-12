@@ -22,6 +22,9 @@ gem install caretaker
 
 ls -l
 
+whoami
+
+id
 
 exit 0
 
