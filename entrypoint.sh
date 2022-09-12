@@ -24,13 +24,15 @@ fi
 git config --global --add safe.directory /github/workspace
 git config --global user.name "${INPUT_GIT_PUSH_USER_NAME}"
 git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
+git config --global pull.rebase false
+
+git fetch
+git pull
 
 gem install caretaker
 
 caretaker --silent --output "${OUTPUT_FILE}" || true
 
-git fetch
-git pull
 git add "${OUTPUT_FILE}"
 
 if [[ -z "${GPG_PRIVATE_KEY}" ]] || [[ -z "${GPG_PASSPHRASE}" ]]; then
