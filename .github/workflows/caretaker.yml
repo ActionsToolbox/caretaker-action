@@ -11,5 +11,3 @@ jobs:
       - name: Caretaker
         id: caretaker
         uses: ActionsToolbox/caretaker-action@master
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
