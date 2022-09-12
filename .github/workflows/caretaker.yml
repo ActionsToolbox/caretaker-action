@@ -1,5 +1,14 @@
 name: Caretaker
-on: [push]
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+      - master
 
 #
 # Needs to be updted on a release too

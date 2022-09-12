@@ -51,7 +51,10 @@ else
         echo "${GPG_PASSPHRASE}"  | gpg-preset-passphrase --preset $k
     done
 
-    git config --global user.signingkey 06EFF25D4D5BAE4F
+    KEY=$(gpg --list-secret-keys --keyid-format LONG caretaker-bot@wolfsoftware.com | head -2 | tail -1)
+    KEY=${KEY//[[:blank:]]/}
+
+    git config --global user.signingkey "${KEY}"
     git config --global commit.gpgsign true
 
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
