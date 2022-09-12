@@ -40,6 +40,7 @@ else
 
     echo -e "${GPG_PRIVATE_KEY}" > gpg.key
 
+    GPG_TTY=$(tty)
     gpg --allow-secret-key-import --import "gpg.key" --passphrase "${GPG_PASSPHRASE}"
 
     rm -f  gpg.key
