@@ -27,14 +27,10 @@ git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
 
 gem install caretaker
 
-caretaker --output "${OUTPUT_FILE}" || true
-
-cat "${OUTPUT_FILE}"
-
-exit 0
-
-
+caretaker --silent --output "${OUTPUT_FILE}" || true
 
 git add "${OUTPUT_FILE}"
 git commit -m "(docs) Update myfile"
 git push
+
+exit 0
