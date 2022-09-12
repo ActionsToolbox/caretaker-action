@@ -37,6 +37,10 @@ if [[ -z "${GPG_PRIVATE_KEY}" ]] || [[ -z "${GPG_PASSPHRASE}" ]]; then
 else
     echo "Key + passphrase given - will sign commits"
 
+    echo "--------------------------------------------"
+    echo "test" | gpg --clearsign
+    echo "--------------------------------------------"
+
     export GPG_TTY=$(tty)
 
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
