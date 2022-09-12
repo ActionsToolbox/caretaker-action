@@ -60,6 +60,6 @@ else
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
 
-git push origin master
+git push
 
 exit 0
