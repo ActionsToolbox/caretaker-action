@@ -1,3 +1,4 @@
+name: Caretaker
 on: [push]
 
 jobs:
@@ -7,7 +8,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: ActionsToolbox/caretaker-action@head
+        uses: ActionsToolbox/caretaker-action@master
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
