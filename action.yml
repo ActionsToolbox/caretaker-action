@@ -1,0 +1,18 @@
+name: "Caretaker Action"
+author: "TGWolf"
+description: "A tool to run caretaker to generate changelogs."
+
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+
+runs:
+  using: "docker"
+  image: Dockerfile
+  args:
+    - ${{ inputs.who-to-greet }}
