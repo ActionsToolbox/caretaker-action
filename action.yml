@@ -14,7 +14,7 @@ inputs:
   git-commit-message:
     description: Commit message
     required: false
-    default: "caretaker-action: automated action"
+    default: "chore: caretaker action"
   output-file:
     description: 'The name of the changelog file'
     required: true

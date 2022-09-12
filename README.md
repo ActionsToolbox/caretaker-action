@@ -35,13 +35,13 @@
 
 ## Inputs
 
-| Name                | Required | Default Value                      | Details                                                                                                                                   |
-| ------------------- | -------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| git-push-user-name  | false    |                                    | If empty the name of the GitHub Actions bot will be used (i.e. '''github-actions[bot]''')                                                 |
-| git-push-user-email | false    |                                    | If empty the no-reply email of the GitHub Actions bot will be used (i.e. '''github-actions[bot]@users.noreply.github.com''')              |
-| git-commit-message  | false    | caretaker-action: automated action | The commit message to use                                                                                                                 |
-| output-file         | false    | CHANGELOG.md                       | The name of the changelog file                                                                                                            |
-| args                | false    |                                    | Additional arguments to pass to the command (see [full documentation](https://github.com/terraform-docs/terraform-docs/tree/master/docs)) |
+| Name                | Required | Default Value           | Details                                                                                                                                   |
+| ------------------- | -------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| git-push-user-name  | false    |                         | If empty the name of the GitHub Actions bot will be used (i.e. '''github-actions[bot]''')                                                 |
+| git-push-user-email | false    |                         | If empty the no-reply email of the GitHub Actions bot will be used (i.e. '''github-actions[bot]@users.noreply.github.com''')              |
+| git-commit-message  | false    | chore: caretaker action | The commit message to use                                                                                                                 |
+| output-file         | false    | CHANGELOG.md            | The name of the changelog file                                                                                                            |
+| args                | false    |                         | Additional arguments to pass to the command (see [full documentation](https://github.com/terraform-docs/terraform-docs/tree/master/docs)) |
 
 > args are currently silently ignored
 
