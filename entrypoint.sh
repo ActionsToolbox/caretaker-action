@@ -42,8 +42,6 @@ else
 
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
-    gpg-preset-passphrase --version
-
     echo allow-preset-passphrase >> ~/.gnupg/gpg-agent.conf
     gpg-connect-agent reloadagent /bye
     keygrip=$(gpg-connect-agent -q 'keyinfo --list' /bye | awk '/KEYINFO/ { print $3 }')
