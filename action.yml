@@ -3,7 +3,7 @@ author: "TGWolf"
 description: "A tool to run caretaker to generate changelogs."
 
 inputs:
-  output:
+  output-file:
     description: 'The name of the changelog file'
     required: true
     default: 'CHANGELOG.md'
@@ -16,7 +16,7 @@ runs:
   using: 'docker'
   image: Dockerfile
   env:
-    OUTPUT_FILE: ${{ inputs.output }}
+    OUTPUT_FILE: ${{ inputs.output-file }}
     ARGS: ${{ inputs.args }}
 
 branding:

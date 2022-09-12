@@ -10,8 +10,14 @@ fi
 
 gem install caretaker
 
+echo "================================"
 ls
+echo "================================"
 
 #/usr/local/bundle/bin/caretaker --output "${OUTPUT_FILE}"
 
 touch MYFILE
+
+
+ls
+echo "================================"
