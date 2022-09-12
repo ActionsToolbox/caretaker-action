@@ -42,14 +42,16 @@ echo "1"
 
 echo "2"
     echo -e "${GPG_PRIVATE_KEY}" > gpg.key
+    echo -e "${GPG_PASSPHRASE}" > passphrase.txt
 
 echo "3"
     export GPG_TTY=$(tty)
 echo "4"
-    gpg --allow-secret-key-import --import "gpg.key" --passphrase "${GPG_PASSPHRASE}"
+    gpg --allow-secret-key-import --import "gpg.key" --passphrase "passphrase.txt"
 echo "5"
 
     rm -f  gpg.key
+    rm -f passphrase.txt
     gpg --list-secret-keys
 fi
 
