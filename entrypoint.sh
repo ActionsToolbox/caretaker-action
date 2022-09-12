@@ -33,6 +33,7 @@ git add "${OUTPUT_FILE}"
 
 if [[ -z "${GPG_PRIVATE_KEY}" ]] || [[ -z "${GPG_PASSPHRASE}" ]]; then
     echo "No Key + passphrase - will use unsigned cmiits "
+
     git commit -m "${INPUT_GIT_COMMIT_MESSAGE}"
 else
     echo "Key + passphrase given - will sign commits"
@@ -42,10 +43,12 @@ else
 #    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
-    gpgconf --kill gpg-agent
+    gpg-preset-passphrase --version
 
-    git config --global user.signingkey 06EFF25D4D5BAE4F
-    git config --global commit.gpgsign true
+#    gpgconf --kill gpg-agent
+
+#    git config --global user.signingkey 06EFF25D4D5BAE4F
+#    git config --global commit.gpgsign true
 
 echo "4"
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
