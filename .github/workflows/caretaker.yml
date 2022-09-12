@@ -20,3 +20,4 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          git-push-user-email: 'caretaker-bot@wolfsoftware.com'
