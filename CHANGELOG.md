@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.10...HEAD)
 
-- chore: caretaker action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- fix shellcheck errors [`[752f950]`](https://github.com/ActionsToolbox/caretaker-action/commit/752f9502ed6e288a2eeca813216495d1d7b5873c)
 
 ### [v0.0.9](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.8...v0.0.9)
 
