@@ -15,9 +15,9 @@ inputs:
 runs:
   using: 'docker'
   image: Dockerfile
-  args:
-    - ${{ inputs.output }}
-    - ${{ inputs.args }}
+  env:
+    OUTPUT_FILE: ${{ inputs.output }}
+    ARGS: ${{ inputs.args }}
 
 branding:
   icon: 'activity'

@@ -11,3 +11,5 @@ jobs:
       - name: Caretaker
         id: caretaker
         uses: ActionsToolbox/caretaker-action@master
+        with:
+          args: '-a -b more -c'
