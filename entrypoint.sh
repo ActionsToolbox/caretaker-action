@@ -44,7 +44,7 @@ echo "2"
     echo -e "${GPG_PRIVATE_KEY}" > gpg.key
 
 echo "3"
-    GPG_TTY=$(tty)
+    export GPG_TTY=$(tty)
 echo "4"
     gpg --allow-secret-key-import --import "gpg.key" --passphrase "${GPG_PASSPHRASE}"
 echo "5"
