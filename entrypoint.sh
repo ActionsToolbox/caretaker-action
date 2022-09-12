@@ -37,16 +37,19 @@ if [[ -z "${GPG_PRIVATE_KEY}" ]] || [[ -z "${GPG_PASSPHRASE}" ]]; then
 else
     echo "Key + passphrase given - will sign commits"
 
-    echo -e "${GPG_PRIVATE_KEY}" > gpg.key
-    echo -e "${GPG_PASSPHRASE}" > passphrase.txt
+#    echo -e "${GPG_PRIVATE_KEY}" > gpg.key
+#    echo -e "${GPG_PASSPHRASE}" > passphrase.txt
 
     export GPG_TTY=$(tty)
 
-    echo "${GPG_PASSPHRASE}" | gpg --allow-secret-key-import --import "gpg.key"
+#    echo "${GPG_PASSPHRASE}" | gpg --allow-secret-key-import --import "gpg.key"
+
+      echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+
 echo "5"
 
-    rm -f  gpg.key
-    rm -f passphrase.txt
+#    rm -f  gpg.key
+#    rm -f passphrase.txt
     gpg --list-secret-keys
 fi
 
