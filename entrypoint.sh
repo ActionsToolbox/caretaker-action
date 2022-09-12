@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export PATH=/usr/local/bundle/bin/:$PATH
+
 set -o errexit
 set -o pipefail
 set -o errtrace
@@ -16,30 +18,18 @@ if [ -z "${INPUT_GIT_PUSH_USER_EMAIL}" ]; then
     INPUT_GIT_PUSH_USER_EMAIL="github-actions[bot]@users.noreply.github.com"
 fi
 
-
 gem install caretaker
 
-echo "================================"
-ls
-echo "================================"
+caretaker --output "${OUTPUT_FILE}"
 
-#/usr/local/bundle/bin/caretaker --output "${OUTPUT_FILE}"
+# When the runner maps the $GITHUB_WORKSPACE mount, it is owned by the runner
+# user while the created folders are owned by the container user, causing this
+# error. Issue description here: https://github.com/actions/checkout/issues/766
+git config --global --add safe.directory /github/workspace
 
-touch MYFILE
+git config --global user.name "${INPUT_GIT_PUSH_USER_NAME}"
+git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
 
-
-ls
-echo "================================"
-
-   # When the runner maps the $GITHUB_WORKSPACE mount, it is owned by the runner
-    # user while the created folders are owned by the container user, causing this
-    # error. Issue description here: https://github.com/actions/checkout/issues/766
-    git config --global --add safe.directory /github/workspace
-
-    git config --global user.name "${INPUT_GIT_PUSH_USER_NAME}"
-    git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
-
-
-git add MYFILE
+git add "${OUTPUT_FILE}"
 git commit -m "(docs) Update myfile"
 git push
