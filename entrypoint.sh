@@ -29,6 +29,8 @@ gem install caretaker
 
 caretaker --silent --output "${OUTPUT_FILE}" || true
 
+git fetch
+git pull
 git add "${OUTPUT_FILE}"
 
 if [[ -z "${GPG_PRIVATE_KEY}" ]] || [[ -z "${GPG_PASSPHRASE}" ]]; then
