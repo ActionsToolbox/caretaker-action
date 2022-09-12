@@ -42,11 +42,7 @@ else
 #    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
-echo "1"
-which pinentry-mac
-echo "2"
-gpgconf --list-options gpg-agent
-echo "3"
+    gpgconf --kill gpg-agent
 
     git config --global user.signingkey 06EFF25D4D5BAE4F
     git config --global commit.gpgsign true
