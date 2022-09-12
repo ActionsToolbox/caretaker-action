@@ -39,12 +39,14 @@ else
 
     export GPG_TTY=$(tty)
 
+#    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
-    cat ~/.gnupg/gpg-agent.conf
+
+which pinentry-mac
 
     git config --global user.signingkey 06EFF25D4D5BAE4F
-    #git config --global commit.gpgsign true
+    git config --global commit.gpgsign true
 
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
