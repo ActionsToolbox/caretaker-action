@@ -20,13 +20,9 @@ fi
 
 gem install caretaker
 
-ls -l
+echo "HELLO WORLD" >> "${OUTPUT_FILE}"
 
-whoami
-
-id
-
-caretaker --output "${OUTPUT_FILE}"
+#caretaker --output "${OUTPUT_FILE}"
 
 cat "${OUTPUT_FILE}"
 
