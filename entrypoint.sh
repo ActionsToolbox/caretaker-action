@@ -29,14 +29,17 @@ gem install caretaker
 
 caretaker --silent --output "${OUTPUT_FILE}" || true
 
-if [[ -z "$GPG_PRIVATE_KEY" ]]; then
-    echo "No Key or key empty - unsigned commit"
+git add "${OUTPUT_FILE}"
+
+if [[ -z "${GPG_PRIVATE_KEY}" ]] || [[ -z "${GPG_PASSPHRASE}" ]]; then
+    echo "No Key + passphrase - will use unsigned cmiits "
+    git commit -m "${INPUT_GIT_COMMIT_MESSAGE}"
 else
-    echo "Key given - will sign commits"
+    echo "Key + passphrase given - will sign commits"
+    gpg --import "${GPG_PRIVATE_KEY}" --passphrase "${GPG_PASSPHRASE}"
+    gpg --list-secret-keys
 fi
 
-git add "${OUTPUT_FILE}"
-git commit -m "${INPUT_GIT_COMMIT_MESSAGE}"
 git push
 
 exit 0
