@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Caretaker
     steps:
-      name: Check our repo
+      - name: Check our repo
         uses: actions/checkout@v3
       - name: Caretaker
         id: caretaker
