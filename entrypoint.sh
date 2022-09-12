@@ -45,11 +45,8 @@ else
     echo "test" | gpg --clearsign
     echo "--------------------------------------------"
 
-
-    gpg --list-secret-keys --keyid-format=long
-
     git config --global user.signingkey 06EFF25D4D5BAE4F
-    git config --global commit.gpgsign true
+    #git config --global commit.gpgsign true
 
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
