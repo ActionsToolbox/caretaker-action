@@ -43,6 +43,9 @@ else
 
     gpg --list-secret-keys
 
+    git config --global user.signingKey 06EFF25D4D5BAE4F
+    git config --global commit.gpgsign true
+
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
 
