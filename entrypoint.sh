@@ -36,6 +36,7 @@ git config --get remote.origin.url
 echo "3"
 git --no-pager log --first-parent --oneline --pretty=format:'%h|%H|%d|%s|%cd'
 
+caretaker --help
 #caretaker --silent --output "${OUTPUT_FILE}"
 
 #cat "${OUTPUT_FILE}"
