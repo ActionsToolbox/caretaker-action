@@ -41,6 +41,8 @@ else
 
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
+    cat ~/.gnupg/gpg-agent.conf
+
     git config --global user.signingkey 06EFF25D4D5BAE4F
     #git config --global commit.gpgsign true
 
