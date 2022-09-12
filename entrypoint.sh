@@ -29,13 +29,16 @@ gem install caretaker
 
 ls -lsa
 
+echo "1"
 git rev-parse --show-toplevel
+echo "2"
 git config --get remote.origin.url
+echo "3"
 git --no-pager log --first-parent --oneline --pretty=format:'%h|%H|%d|%s|%cd'
 
 #caretaker --silent --output "${OUTPUT_FILE}"
 
-cat "${OUTPUT_FILE}"
+#cat "${OUTPUT_FILE}"
 
 exit 0
 
