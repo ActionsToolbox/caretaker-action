@@ -20,6 +20,11 @@ fi
 
 gem install caretaker
 
+ls -l
+
+
+exit 0
+
 caretaker --output "${OUTPUT_FILE}"
 
 # When the runner maps the $GITHUB_WORKSPACE mount, it is owned by the runner
