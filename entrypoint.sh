@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export PATH=/usr/local/bundle/bin/:$PATH
+export PATH=/usr/local/bundle/bin/:/usr/lib/gnupg/:$PATH
 
 #set -o errexit
 #set -o pipefail
@@ -43,12 +43,19 @@ else
 #    echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
     echo "${GPG_PRIVATE_KEY}" | gpg --batch --import
 
-    /usr/lib/gnupg/gpg-preset-passphrase --version
+    gpg-preset-passphrase --version
 
-#    gpgconf --kill gpg-agent
+    echo allow-preset-passphrase >> ~/.gnupg/gpg-agent.conf
+    gpg-connect-agent reloadagent /bye
+    keygrip=$(gpg-connect-agent -q 'keyinfo --list' /bye | awk '/KEYINFO/ { print $3 }')
 
-#    git config --global user.signingkey 06EFF25D4D5BAE4F
-#    git config --global commit.gpgsign true
+    for k in $keygrip
+    do
+        echo "${GPG_PASSPHRASE}"  | gpg-preset-passphrase --preset $k
+    done
+
+    git config --global user.signingkey 06EFF25D4D5BAE4F
+    git config --global commit.gpgsign true
 
 echo "4"
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
