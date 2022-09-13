@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.17...HEAD)
 
-- chore: caretaker action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- Switch to using custom container [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- chore: caretaker action [`[7a17d0e]`](https://github.com/ActionsToolbox/caretaker-action/commit/7a17d0e3e9c8bc4e4b9f7108180e5f6833e90895)
+
+- chore: caretaker action [`[bdfd5f3]`](https://github.com/ActionsToolbox/caretaker-action/commit/bdfd5f3113ca9d5c8bedb617163fef6a69364462)
 
 ### [v0.0.16](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.15...v0.0.16)
 
