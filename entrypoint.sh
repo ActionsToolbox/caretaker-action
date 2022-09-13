@@ -29,10 +29,14 @@ git config --global pull.rebase false
 git fetch --quiet
 git pull --quiet
 
-echo "Current branch"
-git branch
-echo "Defaulr branch"
-git remote show origin | grep 'HEAD branch' | cut -d' ' -f5
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
+
+if [[ "${CURRENT_BRANCH}" != "${DEFAULT_BRANCH}" ]]; then
+    DESTINATION="origin ${CURRENT_BRANCH}"
+else
+    DESTINATION="origin HEAD:${DEFAULT_BRANCH}"
+fi
 
 gem install caretaker
 
@@ -69,6 +73,6 @@ else
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
 
-git push
+git push "${DESTINATION}"
 
 exit 0
