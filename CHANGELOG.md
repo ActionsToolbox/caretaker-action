@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - chore: caretaker action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
 
+- chore: caretaker action [`[dd03226]`](https://github.com/ActionsToolbox/caretaker-action/commit/dd03226970f51d42f4bc21e3752f761763cdbeda)
+
 ### [v0.0.12](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.11...v0.0.12)
 
 > Released on September, 13th 2022
