@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.11...HEAD)
 
-- chore: caretaker action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- general tidy up and docs [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- chore: caretaker action [`[008bcf7]`](https://github.com/ActionsToolbox/caretaker-action/commit/008bcf75c1395b30ed2605c5af3cda827eb7cc93)
+
+- chore: caretaker action [`[6557557]`](https://github.com/ActionsToolbox/caretaker-action/commit/65575570888e8428092ab3c30d2c7277686adfd9)
 
 ### [v0.0.10](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.9...v0.0.10)
 
