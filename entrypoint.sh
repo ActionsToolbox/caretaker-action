@@ -33,9 +33,9 @@ CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
 
 if [[ "${CURRENT_BRANCH}" != "${DEFAULT_BRANCH}" ]]; then
-    DESTINATION="origin ${CURRENT_BRANCH}"
+    DESTINATION="${CURRENT_BRANCH}"
 else
-    DESTINATION="origin HEAD:${DEFAULT_BRANCH}"
+    DESTINATION="HEAD:${DEFAULT_BRANCH}"
 fi
 
 gem install caretaker
@@ -73,6 +73,6 @@ else
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
 
-git push "${DESTINATION}"
+git push origin "${DESTINATION}"
 
 exit 0

@@ -71,7 +71,6 @@ jobs:
       - name: Check our repo
         uses: actions/checkout@v3
         with:
-          ref: 'master'
           fetch-depth: 0
       - name: Caretaker
         uses: ActionsToolbox/caretaker-action@master
@@ -101,7 +100,6 @@ jobs:
       - name: Check our repo
         uses: actions/checkout@v3
         with:
-          ref: 'master'
           fetch-depth: 0
       - name: Caretaker
         id: caretaker
