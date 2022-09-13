@@ -37,6 +37,14 @@ jobs:
           WHITELIST: "https://img.shields.io"
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/awesomebot/master/pipeline.sh)
 
+  hadolint:
+    name: Hadolint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Hadolint
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/hadolint/master/pipeline.sh)
+
   shellcheck:
     name: ShellCheck
     runs-on: ubuntu-latest
@@ -63,6 +71,7 @@ jobs:
     needs:
       - actionlint
       - awesomebot
+      - hadolint
       - shellcheck
       - yaml-lint
     runs-on: ubuntu-latest
