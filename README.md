@@ -62,8 +62,6 @@ on:
       - master
     tags:
       - 'v*'
-  pull_request:
-    types: [closed]
 
 jobs:
   caretaker:
@@ -94,8 +92,6 @@ on:
       - master
     tags:
       - 'v*'
-  pull_request:
-    types: [closed]
 
 jobs:
   caretaker:

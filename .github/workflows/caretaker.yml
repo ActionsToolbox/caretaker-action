@@ -6,8 +6,6 @@ on:
       - master
     tags:
       - 'v*'
-  pull_request:
-    types: [closed]
 
 #
 # Needs to be updted on a release too
