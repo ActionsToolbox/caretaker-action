@@ -3,12 +3,6 @@ author: "TGWolf"
 description: "A tool to run caretaker to generate changelogs."
 
 inputs:
-  gpg_private_key:
-    description: GPG private key for signing the published artifacts
-    required: false
-  gpg_passphrase:
-    description: Passphrase for the GPG key
-    required: false
   git-push-user-name:
     description: If empty the name of the GitHub Actions bot will be used (i.e. `github-actions[bot]`)
     required: false
@@ -21,6 +15,12 @@ inputs:
     description: Commit message
     required: false
     default: "chore: caretaker action"
+  gpg-passphrase:
+    description: Passphrase for the GPG key
+    required: false
+  gpg-private-key:
+    description: GPG private key for signing the published artifacts
+    required: false
   output-file:
     description: 'The name of the changelog file'
     required: true
@@ -34,8 +34,8 @@ runs:
   using: 'docker'
   image: Dockerfile
   env:
-    GPG_PRIVATE_KEY: ${{ inputs.gpg_private_key }}
-    GPG_PASSPHRASE: ${{ inputs.gpg_passphrase }}
+    GPG_PRIVATE_KEY: ${{ inputs.gpg-private-key }}
+    GPG_PASSPHRASE: ${{ inputs.gpg-passphrase }}
     INPUT_GIT_PUSH_USER_NAME: ${{ inputs.git-push-user-name }}
     INPUT_GIT_PUSH_USER_EMAIL: ${{ inputs.git-push-user-email }}
     INPUT_GIT_COMMIT_MESSAGE: ${{ inputs.git-commit-message }}

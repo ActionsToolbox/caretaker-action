@@ -40,6 +40,8 @@
 | git-push-user-name  | false    |                         | If empty the name of the GitHub Actions bot will be used (i.e. '''github-actions[bot]''')                                                 |
 | git-push-user-email | false    |                         | If empty the no-reply email of the GitHub Actions bot will be used (i.e. '''github-actions[bot]@users.noreply.github.com''')              |
 | git-commit-message  | false    | chore: caretaker action | The commit message to use                                                                                                                 |
+| gpg-passphrase      | false    |                         | Passphrase for the GPG key                                                                                                                |
+| gpg-private-key     | false    |                         | GPG private key for signing the published artifacts                                                                                       |
 | output-file         | false    | CHANGELOG.md            | The name of the changelog file                                                                                                            |
 | args                | false    |                         | Additional arguments to pass to the command (see [full documentation](https://github.com/terraform-docs/terraform-docs/tree/master/docs)) |
 
@@ -47,9 +49,21 @@
 
 ## Example usage
 
+### Basic
+
+The following configuration will run caretaker and commit the new changelog to the master branch, however this commits will be unsigned.
+
 ```yaml
 name: Caretaker
-on: [push]
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
+  pull_request:
+    types: [closed]
 
 jobs:
   caretaker:
@@ -59,8 +73,47 @@ jobs:
       - name: Check our repo
         uses: actions/checkout@v3
         with:
+          ref: 'master'
+          fetch-depth: 0
+      - name: Caretaker
+        uses: ActionsToolbox/caretaker-action@master
+```
+
+### Signed Comiits
+
+The following configuration will do exactly the same as the basic example onlt this time the commits will be signed.
+
+> Never use your personal GPG keys for automated tools, create one that is dedicated for this purpose!
+
+```yaml
+name: Caretaker
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
+  pull_request:
+    types: [closed]
+
+jobs:
+  caretaker:
+    runs-on: ubuntu-latest
+    name: Caretaker
+    steps:
+      - name: Check our repo
+        uses: actions/checkout@v3
+        with:
+          ref: 'master'
           fetch-depth: 0
       - name: Caretaker
         id: caretaker
         uses: ActionsToolbox/caretaker-action@master
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          git-push-user-email: ${{ secrets.GPG_EMAIL }}
+
 ```
+
