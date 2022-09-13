@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.17...HEAD)
 
-- remove labels from container [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- hadolint [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- chore: caretaker action [`[fe4a5e3]`](https://github.com/ActionsToolbox/caretaker-action/commit/fe4a5e3337c458b32ed011693dc465548ce93c54)
+
+- remove labels from container [`[265ffde]`](https://github.com/ActionsToolbox/caretaker-action/commit/265ffde028207dd303c0b60a7714ab6ade4fa83d)
 
 - chore: caretaker action [`[28d188b]`](https://github.com/ActionsToolbox/caretaker-action/commit/28d188b049d0567387db33578e4b5c9f54a588f4)
 
