@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-export PATH=/usr/local/bundle/bin/:/usr/lib/gnupg/:$PATH
+#export PATH=/usr/local/bundle/bin/:/usr/lib/gnupg/:$PATH
+export PATH=/usr/lib/gnupg/:$PATH
 
 #set -o errexit
 #set -o pipefail
@@ -48,7 +49,7 @@ fi
 git fetch origin "${PULL_FROM}"
 git pull origin "${PULL_FROM}"
 
-gem install caretaker
+#gem install caretaker
 
 caretaker --silent --output "${OUTPUT_FILE}" || true
 

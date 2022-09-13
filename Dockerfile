@@ -1,4 +1,4 @@
-FROM ruby:latest
+FROM wolfsoftwareltd/caretaker
 
 COPY entrypoint.sh /entrypoint.sh
 
