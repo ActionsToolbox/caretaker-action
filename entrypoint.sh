@@ -26,8 +26,13 @@ git config --global user.name "${INPUT_GIT_PUSH_USER_NAME}"
 git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
 git config --global pull.rebase false
 
-git fetch
-git pull
+git fetch --quiet
+git pull --quiet
+
+echo "Current branch"
+git branch
+echo "Defaulr branch"
+git remote show origin | grep 'HEAD branch' | cut -d' ' -f5
 
 gem install caretaker
 
