@@ -5,9 +5,15 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.16...HEAD)
+### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.17...HEAD)
 
-- more clever crap 3 [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- chore: caretaker action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+### [v0.0.16](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.15...v0.0.16)
+
+> Released on September, 13th 2022
+
+- more clever crap 3 [`[876d35a]`](https://github.com/ActionsToolbox/caretaker-action/commit/876d35a3e295bc0ebffb00dcd2a4ec7418ec02e3)
 
 - chore: caretaker action [`[faccca1]`](https://github.com/ActionsToolbox/caretaker-action/commit/faccca12d30f4d861ed2278bd239b63cce7e8d22)
 
