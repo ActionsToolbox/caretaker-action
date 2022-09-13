@@ -29,12 +29,19 @@ git config --global pull.rebase false
 git fetch --quiet
 git pull --quiet
 
+CURRENT_TAG=$(git name-rev --name-only --tags HEAD)
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
 
-if [[ "${CURRENT_BRANCH}" != "${DEFAULT_BRANCH}" ]]; then
+if [[ "${CURRENT_TAG}" == "undefined" ]]; then
+    #
+    # We are on a branch
+    #
     DESTINATION="${CURRENT_BRANCH}"
 else
+    #
+    # We are on a tag and need to push to head of default
+    #
     DESTINATION="HEAD:${DEFAULT_BRANCH}"
 fi
 
@@ -73,6 +80,7 @@ else
     git commit -S -m "${INPUT_GIT_COMMIT_MESSAGE}"
 fi
 
+echo "git push origin ${DESTINATION}"
 git push origin "${DESTINATION}"
 
 exit 0
