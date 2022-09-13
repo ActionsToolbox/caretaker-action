@@ -35,19 +35,18 @@ if [[ "${CURRENT_TAG}" == "undefined" ]]; then
     # We are on a branch
     #
     DESTINATION="${CURRENT_BRANCH}"
+    PULL_FROM="${CURRENT_BRANCH}"
 
-    git fetch origin "${CURRENT_BRANCH}"
 else
     #
     # We are on a tag and need to push to head of default
     #
     DESTINATION="HEAD:${DEFAULT_BRANCH}"
-
-    git fetch origin "${DEFAULT_BRANCH}"
+    PULL_FROM="${DEFAULT_BRANCH}"
 fi
 
-git pull
-
+git fetch origin "${PULL_FROM}"
+git pull origin "${PULL_FROM}"
 
 gem install caretaker
 
