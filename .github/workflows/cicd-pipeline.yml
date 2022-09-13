@@ -1,5 +1,11 @@
 name: CICD Pipeline
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '**'
+  pull_requests:
+    branches:
+      - '**'
 
 jobs:
   actionlint:
