@@ -26,9 +26,6 @@ git config --global user.name "${INPUT_GIT_PUSH_USER_NAME}"
 git config --global user.email "${INPUT_GIT_PUSH_USER_EMAIL}"
 git config --global pull.rebase false
 
-git fetch --quiet
-git pull --quiet
-
 CURRENT_TAG=$(git name-rev --name-only --tags HEAD)
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
@@ -38,12 +35,19 @@ if [[ "${CURRENT_TAG}" == "undefined" ]]; then
     # We are on a branch
     #
     DESTINATION="${CURRENT_BRANCH}"
+
+    git fetch origin "${CURRENT_BRANCH}"
 else
     #
     # We are on a tag and need to push to head of default
     #
     DESTINATION="HEAD:${DEFAULT_BRANCH}"
+
+    git fetch origin "${DEFAULT_BRANCH}"
 fi
+
+git pull
+
 
 gem install caretaker
 
