@@ -1,4 +1,4 @@
-FROM wolfsoftwareltd/caretaker
+FROM wolfsoftwareltd/caretaker:0.0.5
 
 COPY LICENSE.md README.md /
 
