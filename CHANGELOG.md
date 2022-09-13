@@ -5,9 +5,15 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.12...HEAD)
+### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.13...HEAD)
 
-- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- chore: caretaker action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+### [v0.0.12](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.11...v0.0.12)
+
+> Released on September, 13th 2022
+
+- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[c59bc0c]`](https://github.com/ActionsToolbox/caretaker-action/commit/c59bc0c114fd78268ed66f74849b54c3d78c76d2)
 
 - stop cicd run on tags [`[5e09022]`](https://github.com/ActionsToolbox/caretaker-action/commit/5e09022d2179290c472fa1a0fd4f2ae7f636d33e)
 
