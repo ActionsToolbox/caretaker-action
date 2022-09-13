@@ -7,6 +7,10 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.11...HEAD)
 
+- remove pull request from caretsker [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- chore: caretaker action [`[284d62e]`](https://github.com/ActionsToolbox/caretaker-action/commit/284d62e476a73d1df2288195d5405d7ecd9888b9)
+
 - test [`[#1]`](https://github.com/ActionsToolbox/caretaker-action/pull/1)
 
 - chore: caretaker action [`[229779e]`](https://github.com/ActionsToolbox/caretaker-action/commit/229779ec4d85aa6a05ec41727f0245055493b38d)
