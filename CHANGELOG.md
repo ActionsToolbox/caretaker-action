@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.12...HEAD)
 
-- stop cicd run on tags [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- stop cicd run on tags [`[5e09022]`](https://github.com/ActionsToolbox/caretaker-action/commit/5e09022d2179290c472fa1a0fd4f2ae7f636d33e)
+
+- stop cicd run on tags [`[baafdfb]`](https://github.com/ActionsToolbox/caretaker-action/commit/baafdfb0c370ab7287b5190ffe17cc61e57f1f4c)
 
 - chore: caretaker action [`[2ab0926]`](https://github.com/ActionsToolbox/caretaker-action/commit/2ab0926d81739a2149e6bf0da932cedc671713d1)
 
