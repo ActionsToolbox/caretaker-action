@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.17...HEAD)
 
-- add labels to container [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- remove labels from container [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- chore: caretaker action [`[28d188b]`](https://github.com/ActionsToolbox/caretaker-action/commit/28d188b049d0567387db33578e4b5c9f54a588f4)
+
+- add labels to container [`[3168297]`](https://github.com/ActionsToolbox/caretaker-action/commit/31682975213895a377eb97901826ed1cac095628)
 
 - chore: caretaker action [`[b904a04]`](https://github.com/ActionsToolbox/caretaker-action/commit/b904a04a239d6c0dbc1c13fd619cc04265f0a2e8)
 
