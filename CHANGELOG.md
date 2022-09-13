@@ -7,7 +7,13 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.13...HEAD)
 
-- fix shellcheck errors [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- more clever things [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- more clever things [`[246e16f]`](https://github.com/ActionsToolbox/caretaker-action/commit/246e16ff872290b56e3e5d50d0c16e647d8c2bf8)
+
+- chore: caretaker action [`[2fdfa18]`](https://github.com/ActionsToolbox/caretaker-action/commit/2fdfa18e33cad7216e0d8d2e36f8d3309fce5faa)
+
+- fix shellcheck errors [`[cf8a433]`](https://github.com/ActionsToolbox/caretaker-action/commit/cf8a433e36f853d48ee9235875703b8830b89b48)
 
 - chore: caretaker action [`[b8d06e6]`](https://github.com/ActionsToolbox/caretaker-action/commit/b8d06e6866475818048cf8cc0abe82249d8d26f5)
 
