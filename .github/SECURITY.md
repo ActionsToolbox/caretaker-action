@@ -2,9 +2,9 @@
 
 This document outlines security procedures and general policies for this project.
 
-  * [Reporting a Bug](#reporting-a-bug)
-  * [Disclosure Policy](#disclosure-policy)
-  * [Comments on this Policy](#comments-on-this-policy)
+* [Reporting a Bug](#reporting-a-bug)
+* [Disclosure Policy](#disclosure-policy)
+* [Comments on this Policy](#comments-on-this-policy)
 
 ## Reporting a Bug
 
@@ -25,9 +25,9 @@ the module.
 
 When a security report is received, we will carry out the following steps:
 
-  * Confirm the problem and determine the affected versions.
-  * Audit code to find any potential similar problems.
-  * Prepare fixes for all releases still under maintenance. These fixes will be
+* Confirm the problem and determine the affected versions.
+* Audit code to find any potential similar problems.
+* Prepare fixes for all releases still under maintenance. These fixes will be
     released as fast as possible.
 
 We will endeavor to keep you informed of the progress towards a fix 
