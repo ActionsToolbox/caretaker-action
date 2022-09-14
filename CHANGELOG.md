@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.17...HEAD)
 
-- Added codacy [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- Remove codacy [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- chore: caretaker action [`[427b67f]`](https://github.com/ActionsToolbox/caretaker-action/commit/427b67f22bbc955aee8976a0b664a37f7d60d440)
+
+- Added codacy [`[3073016]`](https://github.com/ActionsToolbox/caretaker-action/commit/307301681a9a8c5cb1fb1a067ba8043a5aac96d8)
 
 - chore: caretaker action [`[8c6e028]`](https://github.com/ActionsToolbox/caretaker-action/commit/8c6e0286aa3e99b1f868831759f9dbfbadb23b66)
 
