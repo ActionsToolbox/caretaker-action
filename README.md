@@ -35,15 +35,15 @@
 
 ## Inputs
 
-| Name                | Required | Default Value                                | Details                                                   |
-| ------------------- | -------- | -------------------------------------------- | --------------------------------------------------------- |
-| git-push-user-name  | false    | github-actions[bot]                          | The name of the person used for the git commit.           | 
-| git-push-user-email | false    | github-actions[bot]@users.noreply.github.com | The email used for the git commit. Required if using GPG. |
-| git-commit-message  | false    | chore: caretaker action                      | The commit message to use.                                |
-| gpg-passphrase      | false    |                                              | Passphrase for the GPG key.                               |
-| gpg-private-key     | false    |                                              | GPG private key for signing the published artifacts.      |
-| output-file         | false    | CHANGELOG.md                                 | The name of the changelog file.                           |
-| args                | false    |                                              | Additional arguments to pass to the command.              |
+| Name                | Required | Default Value                                 | Details                                                   |
+| ------------------- | -------- | --------------------------------------------- | --------------------------------------------------------- |
+| git-push-user-name  | false    | github-actions\[bot]                          | The name of the person used for the git commit.           | 
+| git-push-user-email | false    | github-actions\[bot]@users.noreply.github.com | The email used for the git commit. Required if using GPG. |
+| git-commit-message  | false    | chore: caretaker action                       | The commit message to use.                                |
+| gpg-passphrase      | false    |                                               | Passphrase for the GPG key.                               |
+| gpg-private-key     | false    |                                               | GPG private key for signing the published artifacts.      |
+| output-file         | false    | CHANGELOG.md                                  | The name of the changelog file.                           |
+| args                | false    |                                               | Additional arguments to pass to the command.              |
 
 > args are currently silently ignored
 
