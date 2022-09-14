@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.17...HEAD)
 
-- Remove codacy [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+
+- git gurdian [`[61dc3b0]`](https://github.com/ActionsToolbox/caretaker-action/commit/61dc3b06bb0bc785ed202dab2f4281351f6ee518)
+
+- Remove codacy [`[b94c453]`](https://github.com/ActionsToolbox/caretaker-action/commit/b94c4534a917734d5164190833e7c7b68aa4ae76)
 
 - chore: caretaker action [`[427b67f]`](https://github.com/ActionsToolbox/caretaker-action/commit/427b67f22bbc955aee8976a0b664a37f7d60d440)
 
