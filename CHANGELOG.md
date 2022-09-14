@@ -9,6 +9,10 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - Added codacy [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
 
+- chore: caretaker action [`[fba88bb]`](https://github.com/ActionsToolbox/caretaker-action/commit/fba88bb9d45de85dde0a5e69c8871aae730fcfa4)
+
+- Added codacy [`[2ef83e5]`](https://github.com/ActionsToolbox/caretaker-action/commit/2ef83e514eaf1fd835086cb45c281c50af09e68e)
+
 - chore: caretaker action [`[7ba5f96]`](https://github.com/ActionsToolbox/caretaker-action/commit/7ba5f960bf78459d56c419b497bb9bc58a5d6151)
 
 - Added codacy [`[feae319]`](https://github.com/ActionsToolbox/caretaker-action/commit/feae3196c4b915951d3ee5c9d113b637134f6911)
