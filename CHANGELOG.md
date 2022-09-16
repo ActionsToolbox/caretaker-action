@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/ActionsToolbox/caretaker-action/compare/v0.0.17...HEAD)
 
-- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[head]`](https://github.com/ActionsToolbox/caretaker-action/commit/)
+- chore(deps): bump actions/checkout from 2 to 3 [`[#2]`](https://github.com/ActionsToolbox/caretaker-action/pull/2)
+
+- chore: caretaker action [`[f425883]`](https://github.com/ActionsToolbox/caretaker-action/commit/f425883d01096275284328459b8a27dcf43d339e)
+
+- Merge branch 'master' of github.com:ActionsToolbox/caretaker-action [`[f02819e]`](https://github.com/ActionsToolbox/caretaker-action/commit/f02819ee793f94d0a79f320473a684ed0e1f30e1)
 
 - git gurdian [`[61dc3b0]`](https://github.com/ActionsToolbox/caretaker-action/commit/61dc3b06bb0bc785ed202dab2f4281351f6ee518)
 
