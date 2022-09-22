@@ -10,3 +10,11 @@ updates:
       - "dependabot: lang : github actions"
       - "dependabot: dependencies"
 
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependabot: ecosystem : docker"
+      - "dependabot: dependencies"
